@@ -6,6 +6,7 @@ from django.http import HttpResponse
 def home(request):
     return HttpResponse("This the the Home for the Card")
 
-def allcards(name):
-    return HttpResponse(f'The is the {name} card for the blog app')
+def allcards(request, name):
+    return HttpResponse(f"This is the {name} color card for the Application")
+
 
